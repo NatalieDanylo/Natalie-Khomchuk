@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "e0116f59-b5bb-41a1-90a1-6c3418c50431",
+		"name": "New graphql cities",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27165702"
+	},
+	"item": [
+		{
+			"name": "query/ all cities id and names",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"query {\r",
+							"  id:\r",
+							"  getAllCities {\r",
+							"    id\r",
+							"    name\r",
+							"  }\r",
+							"  \r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n  id:\r\n  getAllCities {\r\n    id\r\n    name\r\n  }\r\n  \r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://graphql-ukrainian-cities.hillel.it/graphql",
+					"protocol": "https",
+					"host": [
+						"graphql-ukrainian-cities",
+						"hillel",
+						"it"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query/ name of city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query{\r\n    getCityById(id:4){\r\n        name\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://graphql-ukrainian-cities.hillel.it/graphql",
+					"protocol": "https",
+					"host": [
+						"graphql-ukrainian-cities",
+						"hillel",
+						"it"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query/ Description  of Kyiv and Lviv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query{\r\n  LeftComparison: getCityDescription(id:7) \r\n  \r\n  RightComparison: getCityDescription(id:11)  \r\n  \r\n  }\r\n\r\n\r\n    \r\n\r\n\r\n  \r\n  \r\n\r\n       \r\n    \r\n      \r\n   \r\n \r\n\r\n    \r\n    \r\n    \r\n  \r\n\r\n      \r\n    ",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://graphql-ukrainian-cities.hillel.it/graphql",
+					"protocol": "https",
+					"host": [
+						"graphql-ukrainian-cities",
+						"hillel",
+						"it"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutation/ add city",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"  \r",
+							"  \r",
+							"\r",
+							"    \r",
+							"\r",
+							"\r",
+							"   \r",
+							"\r",
+							"    \r",
+							"\r",
+							"\r",
+							"  \r",
+							"  \r",
+							"\r",
+							"       \r",
+							"    \r",
+							"      \r",
+							"   \r",
+							" \r",
+							"\r",
+							"    \r",
+							"    \r",
+							"    \r",
+							"  \r",
+							"\r",
+							"      \r",
+							"    "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  addCity(name:\"Test\",square:839,description:\"Best\"){\r\n    id\r\n    name\r\n    square\r\n    ... on City{\r\n      description\r\n    }\r\n  }\r\n}\r\n  \r\n\r\n  \r\n  \r\n\r\n    \r\n\r\n\r\n   \r\n\r\n    \r\n\r\n\r\n  \r\n  \r\n\r\n       \r\n    \r\n      \r\n   \r\n \r\n\r\n    \r\n    \r\n    \r\n  \r\n\r\n      \r\n    ",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://graphql-ukrainian-cities.hillel.it/graphql",
+					"protocol": "https",
+					"host": [
+						"graphql-ukrainian-cities",
+						"hillel",
+						"it"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query/ query from 2 to 5 city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query($minId: Int! = 1, $maxId: Int! = 22){\r\n  getCityByRangeId(filter:{minId:$minId, maxId:$maxId}){\r\n    id\r\n    name\r\n    square\r\n  }\r\n}\r\n\r\n\r\n  \r\n  \r\n\r\n    \r\n\r\n\r\n   \r\n\r\n    \r\n\r\n\r\n  \r\n  \r\n\r\n       \r\n    \r\n      \r\n   \r\n \r\n\r\n    \r\n    \r\n    \r\n  \r\n\r\n      \r\n    ",
+						"variables": "{\r\n    \"minId\":2,\r\n    \"maxId\":5\r\n}"
+					}
+				},
+				"url": {
+					"raw": "https://graphql-ukrainian-cities.hillel.it/graphql",
+					"protocol": "https",
+					"host": [
+						"graphql-ukrainian-cities",
+						"hillel",
+						"it"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutation/ update city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n \tupdateCity(id:3,name:\"Test\",square:839,description:\"Best\"){\r\n     id\r\n    name\r\n    square\r\n    ... on City{\r\n      description\r\n    }\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://graphql-ukrainian-cities.hillel.it/graphql",
+					"protocol": "https",
+					"host": [
+						"graphql-ukrainian-cities",
+						"hillel",
+						"it"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutation/ delete city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n \tdeleteCity(id:3)\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://graphql-ukrainian-cities.hillel.it/graphql",
+					"protocol": "https",
+					"host": [
+						"graphql-ukrainian-cities",
+						"hillel",
+						"it"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
