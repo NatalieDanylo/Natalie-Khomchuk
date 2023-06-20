@@ -1,0 +1,270 @@
+{
+	"id": "19114a8a-f763-4d3b-ac8b-c9a5959ce6c7",
+	"name": "New API Garage",
+	"timestamp": "2023-06-20T17:34:07.968Z",
+	"collection_id": "27165702-70a82218-eca0-4e4f-aad1-7444f5dec975",
+	"folder_id": 0,
+	"environment_id": "27165702-f10b7f69-0722-47fa-a757-51ffaefdcbd8",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-20T17:34:05.469Z",
+	"totalFail": 7,
+	"results": [
+		{
+			"id": "ca8e4863-989c-489e-93fc-920a2a728ac0",
+			"name": "user signin",
+			"url": "https://qauto.forstudy.space/api/auth/signin",
+			"time": 572,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				572
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "63796834-5b66-4797-83a4-f540dca40296",
+			"name": "Change user's name and surname",
+			"url": "https://qauto.forstudy.space/api/users/profile",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b76e4560-e361-4c5f-a941-4f9627f464a7",
+			"name": "cnange on ml",
+			"url": "https://qauto.forstudy.space/api/users/settings",
+			"time": 69,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				69
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b4240f5d-59a0-439e-8b7e-933bdbb3ec4f",
+			"name": "add new car",
+			"url": "https://qauto.forstudy.space/api/cars",
+			"time": 90,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				90
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2cd7742b-d289-42c3-92d0-5a5424843d67",
+			"name": "change mileage",
+			"url": "https://qauto.forstudy.space/api/cars/46702",
+			"time": 60,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "0a2cc8f0-bae6-4c4e-96b0-ccc4b05d2dd9",
+			"name": "add expenses",
+			"url": "https://qauto.forstudy.space/api/expenses",
+			"time": 62,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				62
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "9b1dc889-6117-452e-bcc2-7f6be30ecb42",
+			"name": "delete car",
+			"url": "https://qauto.forstudy.space/api/cars/46702",
+			"time": 65,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "27df1bf7-0bd2-44de-b5b6-1b88143c450f",
+			"name": "delete user",
+			"url": "https://qauto.forstudy.space/api/user/signin",
+			"time": 57,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				57
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1039,
+	"collection": {
+		"requests": [
+			{
+				"id": "ca8e4863-989c-489e-93fc-920a2a728ac0",
+				"method": "POST"
+			},
+			{
+				"id": "63796834-5b66-4797-83a4-f540dca40296",
+				"method": "PUT"
+			},
+			{
+				"id": "b76e4560-e361-4c5f-a941-4f9627f464a7",
+				"method": "PUT"
+			},
+			{
+				"id": "b4240f5d-59a0-439e-8b7e-933bdbb3ec4f",
+				"method": "POST"
+			},
+			{
+				"id": "2cd7742b-d289-42c3-92d0-5a5424843d67",
+				"method": "PUT"
+			},
+			{
+				"id": "0a2cc8f0-bae6-4c4e-96b0-ccc4b05d2dd9",
+				"method": "POST"
+			},
+			{
+				"id": "9b1dc889-6117-452e-bcc2-7f6be30ecb42",
+				"method": "DELETE"
+			},
+			{
+				"id": "27df1bf7-0bd2-44de-b5b6-1b88143c450f",
+				"method": "DELETE"
+			}
+		]
+	}
+}
