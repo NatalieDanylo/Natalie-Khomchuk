@@ -1,0 +1,613 @@
+{
+  "id": "2c890d38-2cf2-4ed7-9260-63eae10c3b02",
+  "version": "2.0",
+  "name": "Garage",
+  "url": "https://qauto2.forstudy.space",
+  "tests": [{
+    "id": "c70cf4e1-f1e5-49c6-b601-21a44f987d9d",
+    "name": "Garage_1_test",
+    "commands": [{
+      "id": "5ec3d80a-1deb-407e-8cb1-6f94212f8905",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be395db4-4a96-47cc-8922-da7d1c427bfc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8d47a4f-4bdd-4299-976e-9bc41dc0c540",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(text(), 'Sign In')]",
+      "targets": [
+        ["css=.btn-outline-white", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "398ee801-c23f-4981-a31a-e52aa611e385",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinEmail",
+      "targets": [
+        ["id=signinEmail", "id"],
+        ["name=email", "name"],
+        ["css=#signinEmail", "css:finder"],
+        ["xpath=//input[@id='signinEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Fusionbreak6@hillel.com"
+    }, {
+      "id": "efad3935-388e-4ed0-be7e-dab268ca5c8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinPassword",
+      "targets": [
+        ["id=signinPassword", "id"],
+        ["name=password", "name"],
+        ["css=#signinPassword", "css:finder"],
+        ["xpath=//input[@id='signinPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Na131415"
+    }, {
+      "id": "04a3afd8-09d3-45e9-96cb-34fcc276530e",
+      "comment": "",
+      "command": "click",
+      "target": "id=remember",
+      "targets": [
+        ["id=remember", "id"],
+        ["name=remember", "name"],
+        ["css=#remember", "css:finder"],
+        ["xpath=//input[@id='remember']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "146eea97-acac-4bb5-a8cf-4929ca91eea5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(text(), 'Login')]",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4cd0ef3-6615-4674-9743-3c11a361507e",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNavDropdown",
+      "targets": [
+        ["id=userNavDropdown", "id"],
+        ["css=#userNavDropdown", "css:finder"],
+        ["xpath=//button[@id='userNavDropdown']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'My profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99db779a-5371-4944-9c37-0282d073e386",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//nav/button",
+      "targets": [
+        ["css=.dropdown-item:nth-child(6)", "css:finder"],
+        ["xpath=//nav/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab333dc2-800c-40a3-b1e8-1bbbd7cec7d6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "eba34049-a5dd-4516-805d-b565c8e526df",
+    "name": "Garage_2_test",
+    "commands": [{
+      "id": "3f156a78-f53a-49db-9695-2a310fd9bced",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49704c24-bbd3-4c03-9802-f6fae77bb74b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9135421b-b40f-4332-9516-fedcdc436d0c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97efdcbc-4a7a-4988-a36b-5a7ccd38e110",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66b25a7d-8e72-4a27-ae17-f549c51e7814",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div/div/button",
+      "targets": [
+        ["css=.panel-page_heading > .btn", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ad65e4-53b3-4483-8758-b78776b9060d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'×')]",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-add-car-modal/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a13676e-4dbc-4910-b46f-afeeaba9e4e7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button",
+      "targets": [
+        ["id=userNavDropdown", "id"],
+        ["css=#userNavDropdown", "css:finder"],
+        ["xpath=//button[@id='userNavDropdown']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'My profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66c77dda-b3d9-48b1-a916-ac48285b29af",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//nav/button",
+      "targets": [
+        ["css=.dropdown-item:nth-child(6)", "css:finder"],
+        ["xpath=//nav/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd27d7e4-2d7d-403b-abce-90e6c97ebfa8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5eda2555-0db8-496b-885d-f74eab1375f9",
+    "name": "Garage_3_test",
+    "commands": [{
+      "id": "33390408-3b73-4bc7-b1a8-c1cdb042b9b8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e212c55b-54d4-4cef-b41d-4dcc604a5cae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d27fbdd5-7c2d-42d2-81f7-3f0cfb6bbeac",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(text(), 'Sign In')]",
+      "targets": [
+        ["css=.btn-outline-white", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e935bc3-9eec-46a6-b883-877b1dd47bf2",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinEmail",
+      "targets": [
+        ["id=signinEmail", "id"],
+        ["name=email", "name"],
+        ["css=#signinEmail", "css:finder"],
+        ["xpath=//input[@id='signinEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Fusionbreak6@hillel.com"
+    }, {
+      "id": "a8571657-b60a-4560-b768-b64ff3428eb3",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinPassword",
+      "targets": [
+        ["id=signinPassword", "id"],
+        ["name=password", "name"],
+        ["css=#signinPassword", "css:finder"],
+        ["xpath=//input[@id='signinPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Na131415"
+    }, {
+      "id": "346fcb17-e4bc-445f-8f29-07875e5c95dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=remember",
+      "targets": [
+        ["id=remember", "id"],
+        ["name=remember", "name"],
+        ["css=#remember", "css:finder"],
+        ["xpath=//input[@id='remember']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f73335b1-b45e-4f85-befe-fd29fb57a4fb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Login')]",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bffab01-00ba-48ec-821f-80be158b5d4c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Settings",
+      "targets": [
+        ["linkText=Settings", "linkText"],
+        ["css=.sidebar_btn-group > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Settings')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/settings')])[2]", "xpath:href"],
+        ["xpath=//div/div/nav/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddd57b96-889f-471e-a73c-ba405f21c175",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailChangeEmail",
+      "targets": [],
+      "value": "Fusionbreak6@hillel.com"
+    }, {
+      "id": "83172598-46f3-413c-8af7-83ae84736a62",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailChangePassword",
+      "targets": [],
+      "value": "Na131415"
+    }, {
+      "id": "95116d62-37d3-469d-b1b8-e44062bcde1d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'km')]",
+      "targets": [
+        ["css=.user-settings_item:nth-child(2) .btn-secondary", "css:finder"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'km')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60d73b24-5824-4f93-b189-0923a35e3a03",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNavDropdown",
+      "targets": [
+        ["id=userNavDropdown", "id"],
+        ["css=#userNavDropdown", "css:finder"],
+        ["xpath=//button[@id='userNavDropdown']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'My profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb1b8526-348a-4c8d-ade7-f28568706251",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//nav/button",
+      "targets": [
+        ["css=.dropdown-item:nth-child(6)", "css:finder"],
+        ["xpath=//nav/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "339b1a7e-59bd-4b65-8b50-5f8e0a19bbc9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac7a2a9f-9136-4d43-b84b-28426c25334e",
+    "name": "Garage_4_test",
+    "commands": [{
+      "id": "62b7f77d-f419-4dde-ba5d-97a522fcaa25",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9131d424-48f7-4873-891b-3325bdba8617",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc9493d2-c35c-4aa7-971a-ba9dc52be6cb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/button",
+      "targets": [
+        ["css=.-guest", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guest log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de75efef-1d11-47c8-8b30-cd2daaaa4e47",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c35bcb-c3ab-4e70-ae54-5b2fc8c202bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarBrand",
+      "targets": [
+        ["id=addCarBrand", "id"],
+        ["name=carBrandId", "name"],
+        ["css=#addCarBrand", "css:finder"],
+        ["xpath=//select[@id='addCarBrand']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c6785e6-b353-41fc-8062-962105442bfa",
+      "comment": "",
+      "command": "select",
+      "target": "id=addCarBrand",
+      "targets": [],
+      "value": "label=BMW"
+    }, {
+      "id": "130104d8-001a-45f6-8b7e-a931cf5c2b1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarModel",
+      "targets": [
+        ["id=addCarModel", "id"],
+        ["name=carModelId", "name"],
+        ["css=#addCarModel", "css:finder"],
+        ["xpath=//select[@id='addCarModel']", "xpath:attributes"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a9bf7f0-9b62-4768-81bf-98af701c7a2a",
+      "comment": "",
+      "command": "select",
+      "target": "id=addCarModel",
+      "targets": [],
+      "value": "label=X5"
+    }, {
+      "id": "2121c11e-30f6-4a5b-b4db-31639476446a",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "865cfe00-3336-4fee-a512-759f2a94215a",
+      "comment": "",
+      "command": "type",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "120"
+    }, {
+      "id": "49b6f11b-c866-419c-951f-c90804b310d5",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "xpath=//button[2]",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": "21.671875,19"
+    }, {
+      "id": "0ddf9280-d3ca-4c9b-b58a-d2efa029ad84",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "xpath=//button[2]",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": "21.671875,19"
+    }, {
+      "id": "ec60cd62-77fe-4e64-ae4d-c509b1ab417a",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "xpath=//button[2]",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": "21.671875,19"
+    }, {
+      "id": "8c05b785-686b-4110-af7d-846e50357ae3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[2]",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19642c94-88ce-4e21-add0-2121648be37d",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNavDropdown",
+      "targets": [
+        ["id=userNavDropdown", "id"],
+        ["css=#userNavDropdown", "css:finder"],
+        ["xpath=//button[@id='userNavDropdown']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'My profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2679ea4f-6167-42da-92e6-256d2bf57dda",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//nav/button",
+      "targets": [
+        ["css=.dropdown-item:nth-child(5)", "css:finder"],
+        ["xpath=//nav/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d8350b9-8208-4f25-a69e-f5cb2e5c26e7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3bb82fb1-0190-4c58-ba67-98727b83262f",
+    "name": "Garage_5_test",
+    "commands": [{
+      "id": "229de76a-0d0c-408c-9984-ad136f6d038d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "973d30d9-572b-4a29-93ae-90c067c42e18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40e26ac2-8ab8-4efb-b3f5-cfa900bc3a63",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(text(), 'Sign up')]",
+      "targets": [
+        ["css=.hero-descriptor_btn", "css:finder"],
+        ["xpath=//div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eedca88-7484-48e7-9f79-99500404a2a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=signupName",
+      "targets": [
+        ["id=signupName", "id"],
+        ["name=name", "name"],
+        ["css=#signupName", "css:finder"],
+        ["xpath=//input[@id='signupName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34444f2d-c323-4269-9dda-fb8612d7b2cb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='button']",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-signup-modal/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dfe0e20-fb3c-45d6-a87a-e4762afdc65d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "91aaf135-96af-4a08-8b58-0d8af03e951c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c70cf4e1-f1e5-49c6-b601-21a44f987d9d"]
+  }],
+  "urls": ["https://qauto2.forstudy.space/"],
+  "plugins": []
+}
