@@ -26,17 +26,23 @@ def test_mytest5():
     WebDriverWait(driver, 3).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Login')]"))).click()
     WebDriverWait(driver, 3).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Add car')]")))
 
-    txt = "Instructions"
-    x = re.findall("Instructions", txt)
-    print(x)
-    txt = "The rain in Spain"
-    x1 = re.search("^Hillel.*courses$", txt)
-    print(x1)
-    txt = "Add car"
-    x3 = re.search("Add car", txt)
-    print(x3)
-    txt = "Garage"
-    x4 = re.findall("Garage", txt)
-    print(x4)
-    
+    #txt = "Instructions"
+    #x = re.findall("Instructions", txt)
+    #print(x)
+    #txt = "Hillel auto developed in Hillel IT school for educational purposes of QA courses"
+    #x1 = re.search("^Hillel.*courses$", txt)
+    #print(x1)
+    #txt = "Add car"
+    #x3 = re.search("Add car", txt)
+    #print(x3)
+    #txt = "Garage"
+    #x4 = re.findall("Garage", txt)
+    #print(x4)
+    assert "Add car" in driver.page_source
+    print(" Add car is present")
+    value = ("Instructions")
+    assert re.match("\w+", value)
+    print("Instruction is a word and I am stubborn and have one more try")
+
+
     driver.close()
